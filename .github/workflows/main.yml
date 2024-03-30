@@ -12,9 +12,9 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
             browser: chrome
-            record: false
-            parallel: true
-            group: "Chrome"
+            #record: false
+            #parallel: true
+            #group: "Chrome"
             spec: cypress/e2e/1-getting-started/*cy.js
         env:
             ENV: "pr"
