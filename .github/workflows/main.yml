@@ -18,6 +18,8 @@ jobs:
             spec: cypress/e2e/1-getting-started/*cy.js
         env:
             ENV: "pr"
+            CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}`
+            CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
             USERNAME: ${{ secrets.USER }}
       - uses: actions/upload-artifact@v4
         # add the line below to store screenshots only on failures
